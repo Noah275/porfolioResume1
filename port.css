@@ -15,6 +15,30 @@
 .projHead{
     background-color: #A6BCFA;
 }
+
+.proReturn{
+    padding: 1rem;
+}
+
+.proReturn > a{
+    padding: 0.3rem 0.4rem;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase ;
+    font-size: 15px;
+    background-color: #ffff;
+    color: black;
+    border-radius: 15px;
+}
+
+.proReturn > a > span{
+    border-radius: 100%;
+    padding: 0.3rem;
+    background-color: #A6BCFA;
+}
  
 .projHeader{
     padding-block: 4rem;
