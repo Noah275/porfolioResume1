@@ -36,13 +36,17 @@
 
 .proReturn > a > span{
     border-radius: 100%;
-    padding: 0.3rem;
     background-color: #A6BCFA;
+    height: 30px;
+    width: 30px;
+    /* padding: 0.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  
 .projHeader{
     padding-block: 4rem;
- 
 } 
 
  .projCont{
