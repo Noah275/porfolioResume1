@@ -25,7 +25,8 @@
     width: 110px;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
     text-decoration: none;
     text-transform: uppercase ;
     font-size: 15px;

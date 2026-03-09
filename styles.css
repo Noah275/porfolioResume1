@@ -65,6 +65,10 @@ nav{
     color: #393939;
 }
 
+ .hamburger, #toggle{
+    display: none;
+}
+
  .navImg{
     width: 25px;
 }
@@ -78,7 +82,45 @@ nav{
         background: #FFFFFF;
     }
     .navRight{
-        display: none;
+        position: absolute;
+        width: 75%;
+        padding-top: 1.4rem;
+        top: 5rem;
+        right: 0;
+        z-index: 1;
+        background-color: #0a0701;
+        opacity: 0.8;
+        border-bottom: 4px solid #fff;
+        transform: translatex(100%);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); 
+    }
+
+    .navItems{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navItems > a{
+        font-size: 17px;
+        color: #fff;
+        border-bottom: 1.5px solid #393939;
+        padding: 1rem;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 2.5rem;
+        opacity: 0.5;
+    }
+
+        #toggle:checked + .navRight{
+        display: block;
+        transform: none;
+    }
+
+    .navImg{
+        width: 70px;
+        padding: 1rem;
     }
  }
 
@@ -297,9 +339,7 @@ nav{
 .proIconWrapper{
     border: 1px solid;
     width: 300px;
-    height: 50vh;
-  
-
+    height: 40vh; 
    
 }
 
@@ -955,7 +995,12 @@ nav{
         font-family: "Roboto", sans-serif;
         color: #8B8B8B;
         font-size: 10px;
-
+     }
+     .form__City > a{
+        font-family: "Roboto", sans-serif;
+        color: #8B8B8B;
+        font-size: 10px;
+        text-decoration: none;
      }
 
      .conBut{
@@ -998,17 +1043,23 @@ nav{
             flex-direction: column;
         }
 
+    
+
         .formCont{
             width: 290px;
             /* border: 1px solid; */
-            box-shadow: 8px 8px 34px 0px #0000000D;
             margin-bottom: 1.5rem;
-
+            padding: 1rem;
         }
 
         .formBox > input{
-            width: 140px;
+            width: 125px;
+        }
 
+        .forMes{
+            box-shadow: 9.37px 9.37px 39.84px 0px #0000000D;
+            background-color:#FFFFFF;
+            padding: 2rem;
         }
 
             .social__Img{
