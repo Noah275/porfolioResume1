@@ -904,8 +904,7 @@ nav{
 
 
      /* Contact Styling */
-     .conBox{
-        width: 600px;
+     .conWap{
         margin: 2rem auto;
      }
 
@@ -925,157 +924,150 @@ nav{
      }
 
      form{
+        width: 100%;
         padding: 2rem;
         box-shadow: 8px 8px 34px 0px #0000000D;
-
-     }
-     
-     .formWap{
-        display: flex;
-        justify-content: space-between;
+        background: linear-gradient(90deg, #FFFFFF 60%, #A6BCFA 70%); 
+        border-radius: 30px ;
      }
 
-     .formCont{
-         width: 300px;
+     .footBox{
+        width: 450px;
+        margin: 3rem;
      }
 
-     .formBoxWap{
-        display: flex;
-        gap: 0.5rem;
+     .footItems{
         margin-bottom: 2rem;
      }
 
-     .formWord > h1{
+     .footItems > h1{
+        font-size: 30px;
         font-family: "Roboto", sans-serif;
-        font-size: 20px;
-        color: #000000;
-        margin-bottom: 1.5rem;
+     }
 
+      .footItems > h1 > span{
+        color: #2157F2;
+     }
+
+     .formBox{
+        margin-bottom: 1rem;
      }
 
      .formBox > input{
-        background-color: #F5F5F5;
-        font-family: "Roboto", sans-serif;
-        border: none;
-        border-radius: 8px ;
-        font-size: 10px;
-        padding-block: 0.5rem;
-        padding-left: 0.6rem;
-        padding-right: 1.9rem;
-        width: 145px; 
-     }
-
-     .subForm > input{
         width: 100%;
-        padding-bottom: 5rem;
-        padding-left: 0.6rem;
-        padding-top: 0.5rem;
-        background-color: #F5F5F5;
         font-family: "Roboto", sans-serif;
-        text-transform: capitalize;
-        border: none;
-        border-radius: 10px;
         font-size: 10px;
+        padding: 0.5rem;
+        outline: none;
+
      }
 
-
-     .form__Location{
-        display: flex;
-        gap: 1rem;
-        padding-bottom: 1rem;
+     .formText{
+        margin-bottom: 1rem;
      }
 
-     .form__img{
-        width: 30px;
-     }
-
-     .form__img > img{
+    .formText > textarea{
         width: 100%;
-     }
-
-     /* .form__City{
-        line-height: ;
-
-     } */
-
-     .form__City > h1{
         font-family: "Roboto", sans-serif;
-        color: #000000;
-        font-size: 13px;
-        text-transform: capitalize;
-
-     }
-
-     .form__City > p{
-        font-family: "Roboto", sans-serif;
-        color: #8B8B8B;
         font-size: 10px;
-     }
-     .form__City > a{
-        font-family: "Roboto", sans-serif;
-        color: #8B8B8B;
-        font-size: 10px;
-        text-decoration: none;
-     }
+        padding: 0.5rem;
+        outline: none;
+        height: 15vh;
+    }
 
-     .conBut{
-        margin-block: 1.5rem;
-     }
+    .formButton{
+        margin-bottom: 2rem;
+    }
 
-     .conBut > button{
+    .formButton > button{
+        width: 100%;
+        padding: 0.7rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
         font-family: "Roboto", sans-serif;
         background-color: #2157F2;
-        padding: 0.4rem 1.5rem;
-        border: none;
-        color: #FFFFFF;
-        border-radius: 5px;
-        text-transform: capitalize;
+        font-weight: 500;
         font-size: 13px;
-        cursor: pointer;
-     }
+        border: none;
+    }
 
-     .social__Icon{
-        margin-block: 2rem;
+    .formContact{
         display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .formContactBox{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .formContactBox > img{
+        width: 25px;
+    }
+
+    .formContactBoxTxt{
+        line-height: 0.9rem;
+    }
+
+    .formContactBoxTxt > h4{
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+    }
+
+    .formContactBoxTxt > p{
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+
+    .formContactBoxTxt > a{
+        text-decoration: none;
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+       }
+
+       .social__Icon{
+        display: flex;
+        align-items: center;
         justify-content: center;
-        gap: 1rem;
-     }
+        gap: 2rem;
+       }
 
-     .social__Img{
-        width: 30px;
-     } 
 
-     .social__Img > a > img{
-        width: 100%;
-     }
-
+     
+     
     @media (min-width:320px) and (max-width:500px){
-        .conBox{
+        .conWap{
             width: calc(100% - 60px);
         }
 
-        .formWap{
-            flex-direction: column;
-        }
-
-    
-
-        .formCont{
-            width: 290px;
-            /* border: 1px solid; */
-            margin-bottom: 1.5rem;
+        form{
             padding: 1rem;
         }
 
-        .formBox > input{
-            width: 125px;
+        .footBox{
+            margin: 0;
+            width: 100%;
+
         }
 
-        .forMes{
-            box-shadow: 9.37px 9.37px 39.84px 0px #0000000D;
-            background-color:#FFFFFF;
-            padding: 2rem;
-        }
+        .formContact{
+        gap: 0.8rem;
+    }
+
+     .formContactBox{
+        gap: 0.3rem;
+    }
+
+     .formContactBox > img{
+        width: 20px;
+    }
 
             .social__Img{
         width: 20px;
